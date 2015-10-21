@@ -1,6 +1,36 @@
 // Constructors
 // Only add code to *THIS* section!
 
+let Dog = function(options){
+   options = options || {};
+    this.color = options.color;
+    this.status = "normal";
+    this.hungry = (options.hungry === undefined) ? true : false;
+    this.pet = options.pet
+
+};
+
+function pet(k){
+  k.status = "happy";
+};
+
+let Human = function(options){
+  options = options || {};
+  this.color = options.color;
+  this.cool = options.cool;
+  this.hungry = options.hungry;
+  this.pet = function(k){
+  k.status = "happy";
+  };
+
+  this.feed = function(k){
+    k.hungry = false  };
+  this.cool = (options.cool === undefined) ? false : true;
+};
+
+
+
+
 ///
 ///
 ///
