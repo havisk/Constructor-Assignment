@@ -7,6 +7,7 @@ let Dog = function(options){
     this.color = options.color;
     this.status = "normal";
     this.hungry = (options.hungry === undefined) ? true : false;
+    //this.hungry = (option.hungry !== undefined) ? option.hungry || true;
     this.pet = options.pet
 
 };
@@ -14,6 +15,7 @@ let Dog = function(options){
 let Human = function(options){
   options = options || {};
   this.cool = (options.cool === undefined) ? false : true;
+  //this.cool = (options.cool !== undefined) ? options.cool || false;
 
   this.pet = function(k){
     k.status = "happy";
